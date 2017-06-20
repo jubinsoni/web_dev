@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my first page</title>
+<!-- meta element...these information is used by search engine to find our page-->
+<meta name="description" content="This is a web page about fish.we cover all the fish in the world" />
+<!-- Content<155character-->
+<meta name="keywords" content="fish,ocean,aquarium"/>
+<meta http-equiv="author" content="john doe"/>
+<meta http-equiv="content-language" content="en-us">
+<!-- meta element-->
+</head>
+
+This is my first heading and i Love it.
+
+<body>
+
+<h1>This is a Heading</h1>
+<br>
+<br>
+<br>
+<br>
+test 			test<br><!-- only one space is provided-->
+test&nbsp;&nbsp;&nbsp;test<!-- 3spaces created-->
+<!--one space is read but for more than one space &nbsp-->
+<!-- comment-->
+<br>
+
+	<ul>
+		<li> CDs </li>
+		<li> DVD </li>
+		<li> Blu Ray </li>
+	</ul>
+    <ol>
+        <li>maths</li>
+        <li>physics</li>
+        <li>chem</li>
+    </ol>
+	<ol>
+		<li> CD </li>
+		<li> DVD </li>
+		<li> Blu Ray </li>
+	</ol>
+
+<table>
+	<tr>
+		<th> The planets </th>
+		<th> The oceans </th>
+		<th> The Deserts </th>	
+	</tr>
+
+	<tr>
+		<td> Earth </td>
+		<td> Ocean </td>
+		<td> Sahara </td>
+	</tr>
+
+
+	<tr>
+		<td> Pluto </td>
+		<td> Atlantic </td>
+		<td> Gobi </td>
+	</tr>
+
+</table>
+
+
+<br>
+<p> please click on this link
+	<a href="https://www.google.co.in"> google </a>
+	<!-- note: link to be given in https://.....we can't give www. directly-->
+</p>
+<br>
+<ul>
+	<li> <a href="#Birds">Birds</a></li><!-- note: #tag is used to give link on same page-->
+	<li> <a href="#Ducks">Ducks</a></li>
+</ul>
+<br>
+<br>
+<br>
+<p> <a name="Birds">this is the article about birds </a> </p>
+<br>
+<br>
+<p><a name="Ducks"> this is a section about ducks </a></p>
+<br>
+<h1> SAD ENDING </h1>
+<p> <img src="end.jpg" width="200" height="200"><br>my fav quote </p><!-- to add image and image attributes-->
+<br>
+<!-- to Create one line input text box-->
+<form action="" method=""> 
+<label for="firstname"> First Name</label><!--tying id from label to input type-->
+
+<input type="text" id="firstname" name="" size="50"><!-- this the command-->
+<br>
+<br>
+<label for="secondname">Second name</label>
+<input type="text" id="secondname" name="">
+</form>
+<br>
+<!--multiline textbox-->
+Comments:<br>
+<textarea rows="10" cols="40"></textarea><br>
+<input type="submit" value="submit">
+<!--multiline textbox ends-->
+<br>
+<!--radio button{only one of the radio button can be selected::note:name to be kept same in all radio buttons}-->
+YES:<input type="radio" name="yesorno" value=""><br>
+NO:<input type="radio" name="yesorno" value="">
+<!--radio button{only one of the radio button can be selected::note:name to be kept same in all radio buttons}-->
+<br>
+<!--checkbox create:multiple selection-->
+	which subjects are you intrested in?<br>
+	<input type="checkbox" name=""> Football<br><!--to force one selection usr can deselect but default it will be selected-->
+	<input type="checkbox" name="" checked="checked"> Basketball<br>
+	<input type="checkbox" name=""> Baseball<br>
+	<input type="checkbox" name=""> Hockey
+
+<br>
+<!--checkbox create:multiple selection-->
+<!--input number box{only number can be inputed here}-->
+<form action="" method="">
+first number:
+	<input type="number" name=""><br>
+	Second number:
+	<input type="number" name="" max="0" min="50"><br><!--now only number between 0 and 50 can be inputed-->
+</form>
+<!--input number box-->
+<br>
+<!--Drop down list-->
+<form action="" method="">
+Select a state:
+	<select>
+		<option value="michigan">michigan</option>
+		<option value="alabama"> alabama </option>
+		<option value="north dakota"> north dakota</option>
+	</select>
+</form>
+<!--Drop down list-->
+<br>
+<!--Date type and number type-->
+<form>
+	Enter a day you want to travel:<input type="Date" name="day">
+	Number of Days: <input type="number" name="numdays" min="1" max="10">
+</form>
+<!--Date type and number type-->
+<br>
+<!--field box and legend-->
+<form>
+<fieldset>
+	<legend>Enter a day you want to travel:</legend>
+	<input type="Date" name="day">
+	Number of Days: <input type="number" name="numdays" min="1" max="10">
+	Name: <input type="text" name="">
+</fieldset>
+</form>
+<!--field box and legend-->
+<br>
+<!--escape characters.....by default browser will recognize only one space character....to give different type of space space character is used-->
+<p> and so we end our&nbsp;&nbsp; tale</p>
+<!--escape characters
+space=&nbsp
+space =  &nbsp;
+™(trademark) = &#8482;
+&(ambersand) = &amp;
+©(copywright) = &copy;
+<(lessthan sign) = &lt;
+>(greater than sign) = &gt;
+?(question mark) = &#63;-->
+<br>
+<!--bold and italics:strong and em element is used for text-to-speech-->
+<p>This is a <b>bold element</b></p>
+<p>This is a <strong>strong element</strong></p>
+<p>This is a <i>italic element</i></p>
+<p>This is a <em>em element</em></p>
+<!--bold and italics-->
+<br>
+<!--iframe element::frameborder=0 means off....1means on
+src=brings the website mentioned in it to iframe-->
+<iframe frameborder="1" width="200" height="200" src="second.html" name="ouriframe" id="ouriframe" >
+	Do you see this?<!--if iframe element is not supported by brwser so it is kept as a warning message-->
+</iframe>
+<!--note:target and id have to be matched
+:
+this iframe help us to load another website within this iframe and not changing the address of the page when we click on the link provided as href-->
+<br>
+<a href="first.html" target="ouriframe">switch to new document</a>
+<br>
+<!--iframe element-->.
+<br>
+<!--sup and sub
+sup for rd upar lagane ke liye twentythird mai
+sub for 2 niche lagane ke liye H2O me-->
+expert said on august 23<sup>rd</sup>
+<br>
+plent of H<sub>2</sub>
+<!--sup and sub-->
+<p>This is a paragraph.</p>
+
+</body>
+
+
+
+
+
+</html>
